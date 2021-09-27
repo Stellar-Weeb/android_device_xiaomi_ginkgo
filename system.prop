@@ -30,6 +30,11 @@ persist.data.df.dev_name=rmnet_usb0
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
+# Havoc-OS
+ro.havoc.device.name=Redmi Note 8
+ro.havoc.group.url=https://t.me/havoc_ginkgo
+ro.havoc.maintainer=Yash Kachave (Introdructor)
+
 # IMS
 persist.vendor.ims.disableADBLogs=1
 persist.vendor.ims.disableDebugLogs=1
