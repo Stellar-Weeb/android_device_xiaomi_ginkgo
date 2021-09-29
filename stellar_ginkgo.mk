@@ -23,15 +23,22 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common HavocwOS stuff
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-TARGET_INCLUDE_STOCK_ARCORE := false
+# Inherit some common Stellar OS stuff
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_PIXEL_CHARGER := true
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+$(call inherit-product, vendor/stellar/config/common_full_phone.mk)
+
+# Enable face unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+# Ship with Lawnchair
+SHIPPING_WITH_LAWNCHAIR := true
+
+# Ship with Google Sans font
+SHIPPING_WITH_GSANS := true
 
 # Device identifier
-PRODUCT_NAME := arrow_ginkgo
+PRODUCT_NAME := stellar_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8
